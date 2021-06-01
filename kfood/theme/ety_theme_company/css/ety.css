@@ -1,0 +1,137 @@
+/* mobile */
+@media (min-width: 1px) and (max-width: 1089px) {
+
+	.fixed-header {display:none;}
+	.login{display:block}
+	.mpage{display:block;}
+	.ppage{display:none;}
+	.spage{overflow-x:auto;white-space: nowrap;}
+
+}
+
+/* desktop */
+@media (min-width: 1090px) {
+
+	.fixed-header {display:block;}
+	.login{display:none}
+	.mpage{display:none;}
+	.ppage{display:block;}
+
+	/* header */
+	.fixed-header {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+	}
+
+	.fixed-top {
+		position: fixed;
+		top: 34px;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+	}
+
+
+}
+
+.footer h2{margin:0 0 20px; 0}
+
+
+.list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.list-group-first{
+	padding: 50px 0px 50px 20px;
+    background: #4c4f6f;
+    font-size: 20px;
+	color:#fff;
+    font-weight: bold;
+    border-top: 3px solid #313450;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.carousel-item a{color:#fff;}
+
+/* 네비게이션 수정 */
+.dropdown-menu {
+    border-radius: 0px;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 7px 15px;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.dropdown-item:hover {
+	background:#f5f5f5;
+}
+
+
+/* 0422 수정 */
+
+.container-fluid {background: #000;}
+#tnb ul { background: #000;}
+
+#login_fs legend{ height: 0; overflow: hidden;}
+.fixed-top .fixed-header{transition: 0.5s}
+.scroll .fixed-header {transition: 0.5s; transform: translateY(-100%);}
+.scroll .fixed-top { transition: 0.5s;top:0; background: rgba(0,0,0,0.8)!important; }
+.scroll .fixed-top li a{color: white;}
+.scroll .fixed-top li ul a{color: #000;}
+
+
+#topbtn{ position: fixed; left: 100%;right: 0;bottom: 0; width: 50px; height: 50px; background: black; color: white;border: none; z-index: 10; outline: none;}
+
+.scroll #topbtn {transform: translateX(-100%); transition: 0.5s}
+.navbar-brand img { width:150px;}
+
+/* 0430 수정 */
+
+#mainBanner{}
+.mbanner{height: 100vh; position: relative;}
+.mbanner1{background-color: pink;}
+.mbanner2{background-color: coral;}
+.mbanner3{background-color: aliceblue;}
+
+#mainBanner .owl-nav button.owl-next,
+#mainBanner .owl-nav button.owl-prev{
+		position: absolute;
+		top:50%;
+		width:40px;
+		height: 40px;
+		transform: rotate(-45deg) translateY(-50%);
+		transform-origin: center;
+    border: 1px solid #222;
+    outline: none;
+		background-color: transparent;
+		font-size: 0;
+}
+#mainBanner .owl-nav button.owl-next{
+	right: 3%; border-width: 0 1px 1px 0;
+}
+#mainBanner .owl-nav button.owl-prev{
+	left: 3%; border-width: 1px 0 0 1px;
+
+}
+#mainBanner .textwrap {
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-left: -500px;
+	transform: translateY(-50%);
+	text-align: left;
+
+}
